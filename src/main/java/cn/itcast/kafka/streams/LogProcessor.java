@@ -45,6 +45,9 @@ public class LogProcessor implements Processor<byte[], byte[]> {
         processorContext.forward(key, inputOri.getBytes());
     }
 
+    /**
+     * 关闭处理器，在这里可以做一些资源清理工作
+     */
     @Override
     public void close() {
 
